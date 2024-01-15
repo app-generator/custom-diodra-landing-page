@@ -1,9 +1,6 @@
-# [Free eCommerce Design](https://github.com/app-generator/design-ecommerce)
+# Diodra Landing Page
 
-Open-Source **[eCommerce Design](https://github.com/app-generator/design-ecommerce)** Template styled with **Bootstrap 5** using a simple codebase and best practices - Actively supported by [AppSeed](https://appseed.us/).
-
-- 👉 [eCommerce Design](https://design-ecommerce.onrender.com): `LIVE DEMO`
-- 👉 `License` [CC BY 3.0](./LICENSE.md) - `Preserve footer credit`
+- 👉 `LIVE DEMO`: https://diodra-landing-lage.onrender.com
 
 <br />
 
