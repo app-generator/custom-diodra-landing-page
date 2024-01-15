@@ -4,16 +4,6 @@
 
 <br />
 
-> `Need More?` **🛒 [BUY License](https://appseed.gumroad.com/l/design-ecommerce)**: `ONLY $19` (one-time payment via GUMROAD) 
-
-- Access to [FIGMA File](https://bit.ly/figma-ecommerce) `view demo`
-- `Remove Footer Credits`
-- `Updates`: Lifetime
-- `Unlimited` hobby & commercial `projects` 
-- 🚀 Free [Support](https://appseed.us/support/) (Email & Discord)
-
-<br />
-
 ![eCommerce Design - Open-source Template crafted by AppSeed.](https://user-images.githubusercontent.com/51070104/222493888-99585696-212e-4f53-9366-b73e01e72582.gif)
 
 <br />
