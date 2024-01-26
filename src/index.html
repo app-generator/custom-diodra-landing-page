@@ -16,7 +16,7 @@
 <head>
     @@include('./_common-head.html', {
       "path": ".",
-      "title": "Mini eCommerce - HOMEpage | AppSeed",
+      "title": "Home | FULELL Flluid",
       "description": "Open-source mini eCommerce Template - Built from FIGMA.",
       "keywords": "ecommerce, template, appseed",
     })    
@@ -32,47 +32,59 @@
       <!-- Main Content -->
       <main class="main-content flex-grow-1">
 
-        <div class="container-xxl">
-  
-          @@include('./_index-top-banner.html', {
-            "path": "."
-          }) 
-      
-          @@include('./_index-top-mini-gallery.html', {
-            "path": "."
-          }) 
-      
-          @@include('./_index-top-promo-cards.html', {
-            "path": "."
-          }) 
-      
-          @@include('./_index-about-brand.html', {
-            "path": "."
-          }) 
-
-        </div>
-
-        @@include('./_index-payday-sale.html', {
+        @@include('./_top-banner.html', {
           "path": "."
         }) 
 
-        @@include('./_index-categories.html', {
+        @@include('./_comparision-block.html', {
           "path": "."
         }) 
 
-        @@include('./_index-testimonial.html', {
+        @@include('./_info-blocks.html', {
           "path": "."
         }) 
 
-        @@include('./_index-faq.html', {
+        @@include('./_subscription-form.html', {
           "path": "."
         })
 
-        @@include('./_index-instagram-cards.html', {
+        @@include('./_bike-frame.html', {
           "path": "."
         })
-       
-        @@include('./_index-video-embedded.html', {
+
+        @@include('./_app-info.html', {
+          "path": "."
+        })
+
+        @@include('./_selected-components.html', {
+          "path": "."
+        })
+
+        @@include('./_photo-gallary.html', {
+          "path": "."
+        })
+
+        @@include('./_subscription-form.html', {
+          "path": "."
+        })
+        
+        @@include('./_dark-subscription-app.html', {
+          "path": "."
+        })
+        
+        @@include('./_model-choise.html', {
+          "path": "."
+        })
+
+        @@include('./_assembly-block.html', {
+          "path": "."
+        })
+
+        @@include('./_faq.html', {
+          "path": "."
+        })
+
+        @@include('./_subscription-form.html', {
           "path": "."
         })
 
@@ -93,5 +105,26 @@
 
     <!-- Theme JS -->
     <script src="./assets/js/app.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".bannerThumbSlider", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        breakpoints: {
+          575: {
+            spaceBetween: 20,
+          },
+        },
+      });
+      var swiper2 = new Swiper(".bannerSliderLarge", {
+        centeredSlides: true,
+        spaceBetween: 0,
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
   </body>
 </html>

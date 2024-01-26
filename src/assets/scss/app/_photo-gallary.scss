@@ -1,0 +1,43 @@
+/* Photo Gallary */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding: 30px;
+}
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  img {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.item1 {
+  grid-column: 1;
+  grid-row: span 2;
+}
+.item2,
+.item3,
+.item4,
+.item5 {
+  grid-column: span 1;
+}
+
+@media (max-width: 1199px) {
+  .grid-container {
+    grid-gap: 10px;
+    padding: 10px 0;
+  }
+}
+@media (max-width: 575px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

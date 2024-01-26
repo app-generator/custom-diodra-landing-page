@@ -1,0 +1,62 @@
+// Subscription Form
+.subscription-section {
+  padding: 78px 16px;
+  background: $primary;
+  color: $white;
+  + {
+    .info-section {
+      padding: 35px 0;
+    }
+  }
+}
+.subscription-form {
+  max-width: 410px;
+  margin: 0 auto;
+  text-align: center;
+  .title {
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+  }
+  .subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $white;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .subscription-section {
+    padding: 50px 20px;
+    & + .info-section {
+      text-align: center;
+      padding: 0 20px 40px;
+      .max-w-428 {
+        margin: 0 auto;
+        max-width: 100%;
+      }
+      .section-image {
+        margin: 30px 0 10px;
+        img {
+          max-width: 380px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  .subscription-section {
+    padding: 40px 0;
+    & + .info-section {
+      .section-image {
+        img {
+          max-width: 320px;
+        }
+      }
+    }
+  }
+}

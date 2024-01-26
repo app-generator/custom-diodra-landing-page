@@ -1,0 +1,11 @@
+.reason-wrap {
+  display: flex;
+}
+@media (max-width: 575px) {
+  .reason-wrap {
+    display: block;
+    .max-w-455 {
+      margin: 20px auto;
+    }
+  }
+}

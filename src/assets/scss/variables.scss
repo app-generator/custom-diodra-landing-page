@@ -3,97 +3,78 @@
 * Copyright AppSeed (https://appseed.us)
 * License MIT
 */
-$soft-background-color: #ffffff !default;
-$font-color : #28282A !default;
-$h-color: #344767 !default;
-$primary-fonts: 'Ubuntu', sans-serif;
-$secondary-fonts: 'Poppins', sans-serif;
+$primary-fonts: "Inter", sans-serif;
 
 // Color system
 $white: #fff !default;
-$gray-100 : #E4E5EA !default;
-$gray-200 : #EEEEEE !default;
-$gray-300: #e2e2e2 !default;
-$gray-400: #9C9C9C !default;
-$gray-500: #747474 !default;
-$gray-600: #717171 !default;
-$gray-700: #495057 !default;
-$gray-800: #151515 !default;
-$gray-900: #0D0D11 !default;
-$black: #000 !default;
-$border-1: #D1D1D1 !default;
-$border-2: #3793D1 !default;
-$input-text-color: #9F9F9F !default;
-// fusv-enable 
-$blue: #113869 !default;
-$primary-blue: #28282A !default;
-$dark-blue: #1B4F87 !default;
-$indigo: #2D5F84 !default;
-$purple: #6f42c1 !default;
-$pink: #D081A4 !default;
-$red: #FF0000 !default;
-$orange: #FF7A00 !default;
-$yellow: #FFE759 !default;
-$green: #94DB33 !default;
-$teal: #20c997 !default;
-$cyan: #00B9AC !default;
-
+$black: #000000 !default;
+$primary: #0e0d0d !default;
+$primary-light: #262626 !default;
+$primary-dark: #050505 !default;
+$eerie-black: #11ee1e !default;
+$accent: #30cfd3 !default;
+$accent-light: #2bbabe !default;
+$grey-1: #909090 !default;
+$grey-2: #828282 !default;
+$grey-3: #c6c6c6 !default;
+$light: #f5f5f5 !default;
+$light-1: #a6a6a6 !default;
+$light-2: #f4f4f4 !default;
+$light-gray: #d3d3d3 !default;
+$success: #5cb042 !default;
+$success-hover: #2b601b !default;
+$chinese-black: #171616 !default;
+$chinese-black-2: #1e1e1e !default;
+$bright-gray: #e2ebed !default;
+$bright-gray-2: #ececec !default;
+$bright-gray-3: #ededed !default;
+$light-silver: #d9d9d9 !default;
+$dim-gray: #6a6a6a !default;
+$old-silver: #868686 !default;
+$old-silver-2: #848484 !default;
+$philippine-silver: #b8b8b8 !default;
+$philippine-silver-2: #b2b2b2 !default;
+$css-grey: #7d7d7d !default;
+$celtic-blue: #e39929 !default;
+$celtic-blue-dark: #124591 !default;
+$davys-grey: #545454 !default;
+$platinum: #e9e6e7 !default;
+$silver-sand: #c2c2c2 !default;
 
 // scss-docs-start colors-map
 $colors: (
-    "blue": $blue,
-    "darkBlue":$dark-blue,
-    "indigo": $indigo,
-    "purple": $purple,
-    "pink": $pink,
-    "red": $red,
-    "orange": $orange,
-    "yellow": $yellow,
-    "green": $green,
-    "teal": $teal,
-    "cyan": $cyan,
-    "white": $white,
-    "gray": $gray-600,
-    "gray-dark": $gray-800,
-    "border-1": $border-1,
-    ) !default;
-
-/*
-* Global Styling (edit below variables) 
-* Warn: once edited, the SCSS needs to be recompiled
-*/
-$primary: #113869 !default; // primary color
-$primary-light: #4281D0 !default; // primary light
-$primary-dark: #072448 !default; // primary dark 
-$secondary: #E0C340 !default; // secondary
-$info: #17c1e8 !default;
-$success: #82d616 !default;
-$warning: #fbcf33 !default;
-$danger: #ea0606 !default;
-$light: #ffffff !default;
-$dark: $h-color !default;
-$gray-light: #f3f3f3 !default;
-// END Global Styling
-
-// scss-docs-start theme-colors-map
-$theme-colors: (
-    "primary": $primary,
-    "secondary": $secondary,
-    "success": $success,
-    "info": $info,
-    "warning": $warning,
-    "danger": $danger,
-    "light": $light,
-    "dark": $dark,
-    "white": $white,
-    "gray-light":$gray-light) !default;
-
-// scss-docs-end theme-colors-map
-
-@mixin primary-gradient() {
-    background: linear-gradient(91.02deg, $primary-light 0%, $primary-dark 100%);
-}
-
-@mixin text-primary-gradient() {
-    background: linear-gradient(91.02deg, $primary-light 0%, $primary-dark 85.09%, $primary-light 102.7%);
-}
+  "$white": $white,
+  "$black": $black,
+  "$primary": $primary,
+  "$primary-light": $primary-light,
+  "$primary-dark": $primary-dark,
+  "$eerie-black": $eerie-black,
+  "$accent": $accent,
+  "$accent-light": $accent-light,
+  "$grey-1": $grey-1,
+  "$grey-2": $grey-2,
+  "$grey-3": $grey-3,
+  "$light": $light,
+  "$light-1": $light-1,
+  "$light-2": $light-2,
+  "$light-gray": $light-gray,
+  "$success": $success,
+  "$success-hover": $success-hover,
+  "$chinese-black": $chinese-black,
+  "$chinese-black-2": $chinese-black-2,
+  "$bright-gray": $bright-gray,
+  "$bright-gray-2": $bright-gray-2,
+  "$bright-gray-3": $bright-gray-3,
+  "$light-silver": $light-silver,
+  "$dim-gray": $dim-gray,
+  "$old-silver": $old-silver,
+  "$old-silver-2": $old-silver-2,
+  "$philippine-silver": $philippine-silver,
+  "$philippine-silver-2": $philippine-silver-2,
+  "$css-grey": $css-grey,
+  "$celtic-blue": $celtic-blue,
+  "$celtic-blue-dark": $celtic-blue-dark,
+  "$davys-grey": $davys-grey,
+  "$platinum": $platinum,
+  "$silver-sand": $silver-sand,
+) !default;

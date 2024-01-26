@@ -131,7 +131,7 @@ gulp.task('serve', gulp.series('scss-tmp', 'html', 'index', 'assets', 'vendor', 
 
     gulp.watch([paths.src.scss + '/app.scss'], gulp.series('scss'));
     gulp.watch([paths.src.html, paths.src.base + '*.html', paths.src.partials], gulp.series('html', 'index'));
-    gulp.watch([paths.src.assets], gulp.series('assets'));
+gulp.watch([paths.src.assets], gulp.series('assets'));
     gulp.watch([paths.src.vendor], gulp.series('vendor'));
 }));
 

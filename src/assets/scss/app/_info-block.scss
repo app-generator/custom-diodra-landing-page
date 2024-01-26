@@ -1,0 +1,28 @@
+/* info-section */
+.info-section {
+  padding: 50px 0;
+  &.primary {
+    background: $primary;
+    color: $white;
+  }
+  &.white {
+    background: $white;
+    color: $primary;
+  }
+  .section-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .info-section {
+    padding: 30px 20px 40px;
+  }
+}
+@media (max-width: 575px) {
+  .info-section {
+    padding: 30px 0 40px;
+  }
+}

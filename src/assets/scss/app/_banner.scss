@@ -1,154 +1,105 @@
 // =========================================================
 // * main banner Component
 // =========================================================
-.main-banner {
-    padding: 35px 0;
-    text-align: center;
-
-    .banner-border-text {
-        font-family: $secondary-fonts;
-        color: transparent;
-        font-weight: 700;
-        font-size: 45px;
-        line-height: 62px;
-        letter-spacing: -0.03em;
-        -webkit-text-stroke-width: 1.5px;
-        -webkit-text-stroke-color: rgba(12, 49, 95, 0.25);
-        text-align: center;
+.banner {
+  padding: 80px 0;
+  .subscription-form {
+    text-align: left;
+    max-width: 100%;
+  }
+}
+.slide-wrapper {
+  margin-right: 78px;
+  .swiper.bannerSliderLarge {
+    max-width: 650px;
+    min-width: 650px;
+    max-height: 360px;
+    padding: 40px 0;
+    border-radius: 20px;
+    margin-left: 0;
+    background: rgba(62, 62, 62, 0.2);
+    margin-bottom: 36px;
+    .swiper-wrapper .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-
-    .banner-title {
-        font-family: $secondary-fonts;
-        font-weight: 800;
-        font-size: 52px;
-        line-height: 62px;
-        letter-spacing: -0.06em;
-        @include text-primary-gradient;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        margin-top: -50px;
-        text-align: center;
+  }
+  .swiper.bannerThumbSlider {
+    max-width: 460px;
+    margin: 0 auto;
+    .swiper-wrapper .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: $chinese-black;
+      cursor: pointer;
+      overflow: hidden;
     }
-
-    .banner-text {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
-        letter-spacing: 0.2px;
-        margin-bottom: 30px;
-        text-align: center;
-        position: relative;
-    }
-
-    .btn {
-        margin: 0 auto;
-
-    }
-
-
-    .modal-btn {
-        margin-left: 10px;
-        padding: 13px;
-
-        img {
-            display: block;
-            width: 16px;
-            height: 16px;
-        }
-    }
-
-    .main-banner-figure {
-        max-width: 580px;
-        margin: -80px auto 0;
-
-        .figure-img {
-            max-width: 100%;
-            object-fit: contain;
-        }
-    }
-
+  }
+  .swiper.bannerThumbSlider
+    .swiper-wrapper
+    .swiper-slide.swiper-slide-thumb-active {
+    border-color: $white;
+  }
 }
 
-@media (min-width:576px) {
-    .main-banner {
-        .banner-border-text {
-            font-size: 60px;
-            line-height: 70px;
-        }
-
-        .banner-title {
-            font-size: 72px;
-            line-height: 82px;
-        }
-    }
+@media (max-width: 1399px) {
+  .slide-wrapper {
+    margin-right: 20px;
+  }
+  .banner {
+    padding: 80px 20px;
+  }
 }
-
-@media (min-width:992px) {
-    .main-banner {
-        min-height: 695px;
-        text-align: left;
-
-        .banner-border-text {
-            font-size: 140px;
-            line-height: 126px;
-        }
-
-        .banner-title {
-            font-size: 165px;
-            line-height: 165px;
-            margin-top: -85px;
-            margin-bottom: 71px;
-        }
-
-        .banner-text {
-            font-size: 22px;
-            line-height: 35px;
-            text-align: left;
-        }
-
-        .main-banner-figure {
-            position: absolute;
-            right: 0;
-            top: 0;
-            margin-top: 91px;
-            max-width: 80%;
-
-
-        }
-
-        .btn-primary {
-            padding: 0 50px;
-            line-height: 56px;
-        }
-
-        .modal-btn {
-            padding: 20px;
-        }
-
+@media (max-width: 1199px) {
+  .slide-wrapper {
+    .swiper.bannerSliderLarge {
+      max-width: 510px;
+      min-width: 510px;
     }
+  }
 }
-
-@media (min-width:1300px) {
-    .main-banner {
-        .banner-border-text {
-            font-size: 180px;
-            line-height: 126px;
-        }
-
-        .banner-title {
-            font-size: 215px;
-            line-height: 215px;
-            margin-top: -105px;
-            margin-bottom: 68px;
-        }
-
-        .main-banner-figure {
-            max-width: 979px;
-
-            .figure-img {
-                max-width: 100%;
-            }
-        }
+@media (max-width: 991px) {
+  .banner {
+    padding: 60px 20px;
+    .subscription-form {
+      max-width: 450px;
+      text-align: center;
     }
+  }
+  .slide-wrapper {
+    margin: 0 auto 50px;
+    .swiper.bannerSliderLarge {
+      margin: 0 auto 30px;
+      min-height: auto;
+      padding: 20px 0;
+      min-width: auto;
+      max-width: 100%;
+    }
+    .swiper.bannerThumbSlider {
+      max-width: 100%;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .slide-wrapper {
+    .swiper.bannerSliderLarge {
+      max-width: 100%;
+      min-width: 100%;
+    }
+    .swiper.bannerThumbSlider .swiper-wrapper .swiper-slide {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .banner {
+    padding: 40px 0 50px;
+  }
 }
