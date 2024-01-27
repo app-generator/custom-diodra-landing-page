@@ -13,13 +13,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    img {
+      max-height: 360px;
+      border-radius: 20px;
+      overflow: hidden;
+    }
   }
 }
 
+@media (max-width: 1199px) {
+}
 @media (max-width: 991px) {
   .info-section {
     padding: 30px 20px 40px;
   }
+}
+@media (max-width: 767px) {
 }
 @media (max-width: 575px) {
   .info-section {

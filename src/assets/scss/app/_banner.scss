@@ -14,7 +14,6 @@
     max-width: 650px;
     min-width: 650px;
     max-height: 360px;
-    padding: 40px 0;
     border-radius: 20px;
     margin-left: 0;
     background: rgba(62, 62, 62, 0.2);
@@ -23,6 +22,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      min-height: 360px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
     }
   }
   .swiper.bannerThumbSlider {
@@ -39,6 +42,10 @@
       background: $chinese-black;
       cursor: pointer;
       overflow: hidden;
+      > img {
+        height: 68px;
+        object-fit: contain;
+      }
     }
   }
   .swiper.bannerThumbSlider
@@ -61,6 +68,11 @@
     .swiper.bannerSliderLarge {
       max-width: 510px;
       min-width: 510px;
+      .swiper-wrapper {
+        .swiper-slide {
+          min-height: 320px;
+        }
+      }
     }
   }
 }
@@ -76,13 +88,17 @@
     margin: 0 auto 50px;
     .swiper.bannerSliderLarge {
       margin: 0 auto 30px;
-      min-height: auto;
-      padding: 20px 0;
+      min-height: 420px;
       min-width: auto;
       max-width: 100%;
-    }
-    .swiper.bannerThumbSlider {
-      max-width: 100%;
+      .swiper-wrapper {
+        .swiper-slide {
+          min-height: 420px;
+          > img {
+            height: 100px;
+          }
+        }
+      }
     }
   }
 }
@@ -92,14 +108,44 @@
       max-width: 100%;
       min-width: 100%;
     }
-    .swiper.bannerThumbSlider .swiper-wrapper .swiper-slide {
-      width: 60px;
-      height: 60px;
+    .swiper.bannerThumbSlider {
+      .swiper-wrapper {
+        .swiper-slide {
+          width: 60px;
+          height: 60px;
+        }
+      }
     }
   }
 }
 @media (max-width: 575px) {
   .banner {
     padding: 40px 0 50px;
+    .slide-wrapper {
+      margin: 0 auto 30px;
+      .swiper.bannerSliderLarge {
+        min-height: 360px;
+        .swiper-wrapper {
+          .swiper-slide {
+            min-height: 360px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .banner {
+    .slide-wrapper {
+      .swiper.bannerSliderLarge {
+        min-height: 300px;
+        .swiper-wrapper {
+          .swiper-slide {
+            min-height: 300px;
+          }
+        }
+      }
+    }
   }
 }

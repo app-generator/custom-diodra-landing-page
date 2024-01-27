@@ -3,7 +3,7 @@
   text-align: center;
   padding: 68px 0;
   .section-description {
-    max-width: 480px;
+    max-width: 90%0px;
     margin: 0 auto 50px;
   }
 }
@@ -41,6 +41,7 @@
     }
     p.section-description {
       margin-bottom: 30px;
+      max-width: 100%;
     }
   }
   .selected-component {
