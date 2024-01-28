@@ -3,7 +3,7 @@
 // =========================================================
 
 footer {
-  padding: 20px 0!important;
+  padding: 20px 0 !important;
   background: $primary;
   .footer-top {
     padding: 20px 0;
@@ -39,6 +39,9 @@ footer {
     }
   }
   .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 18px 0 20px;
     text-align: center;
     font-size: 12px;
@@ -46,17 +49,48 @@ footer {
     font-weight: 400;
     line-height: 20px;
     color: $white;
+    .footer-links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .link-white {
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+        & + .link-white {
+          margin-left: 18px;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+          opacity: 0.8;
+        }
+      }
+    }
   }
 }
 
 @media (max-width: 991px) {
   footer {
-    padding: 16px 0!important;
+    padding: 16px 0 !important;
     .footer-top {
       padding: 16px 0;
     }
     .footer-bottom {
       padding: 18px 0 0;
+    }
+  }
+}
+
+
+@media (max-width: 575px) {
+  footer {
+    .footer-bottom {
+      align-items: center;
+      flex-direction: column-reverse;
+      .footer-links{
+        margin-bottom: 12px;
+      }
     }
   }
 }

@@ -87,3 +87,24 @@
     }
   }
 }
+
+@media (max-width: 757px) {
+  .faq-listing.accordion {
+    .accordion-item {
+      .accordion-header {
+        .accordion-button {
+          font-size: 18px;
+          line-height: 22px;
+          padding: 20px 10px;
+        }
+      }
+      .accordion-collapse {
+        .accordion-body {
+          padding: 0 10px 16px;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
