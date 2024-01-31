@@ -68,6 +68,9 @@ body {
 .ml-auto {
   margin-left: auto !important;
 }
+.radius-0{
+  border-radius: 0!important;
+}
 
 .btn-icon {
   display: inline-flex;
@@ -152,6 +155,28 @@ body {
   &:focus,
   &:active {
     background: $success-hover !important;
+  }
+}
+
+.btn-prefix-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px 0 -4px;
+  }
+}
+
+.btn-primary-light {
+  border: 1px solid $chinese-black-3 !important;
+  background: $chinese-black-3 !important;
+  color: $white !important;
+  &:hover,
+  &:focus,
+  &:active {
+    background: $primary-light !important;
   }
 }
 
@@ -346,6 +371,10 @@ p.section-subtitle {
       color: $black;
     }
   }
+  textarea.form-control{
+    // resize: none;
+    min-height: 100px;
+  }
   .select-control {
     color: $black;
     background: url("./../img/chevron-down-black.svg") no-repeat right 16px
@@ -508,13 +537,10 @@ p.section-subtitle {
     bottom: 0;
     display: block;
     z-index: -1;
-    background: $bright-gray-4 url("./../img/home-banner/banner-slide-4.jpg")
-      no-repeat bottom left;
-    background-size: contain;
-    filter: blur(2px);
+    background: $primary;
   }
   .subscription-form {
-    background: rgba(0, 0, 0, 0.76);
+    background: $primary;
     padding: 50px 40px;
     border-radius: 20px;
     color: $white;
@@ -585,6 +611,38 @@ p.section-subtitle {
     font-weight: 500;
     color: #000000;
     margin-top: 2px;
+  }
+}
+
+.contact-us-dialog.modal {
+  .modal-dialog {
+    .modal-content {
+      border-radius: 0;
+      .modal-header {
+        display: flex;
+        flex-direction: column;
+        padding: 26px 30px 20px;
+        border-bottom: 0;
+        .btn-close {
+          border-radius: 50%;
+          margin-left: auto;
+        }
+        .modal-title{
+          font-size: 26px;
+          line-height: 32px;
+          font-weight: 600;
+        }
+      }
+      .modal-body{
+        padding: 20px 30px;
+        .labled-input{
+          margin-bottom: 24px;
+        }
+      }
+      .modal-footer{
+        border-top: 0;
+      }
+    }
   }
 }
 
@@ -690,10 +748,10 @@ p.section-subtitle {
       }
     }
   }
-  
-  .contact-us-section{
+
+  .contact-us-section {
     padding: 80px 0;
-    .subscription-form{
+    .subscription-form {
       padding: 35px 30px;
     }
   }

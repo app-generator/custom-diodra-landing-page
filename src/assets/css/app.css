@@ -11053,6 +11053,7 @@ textarea.form-control-lg {
   font-weight: 400;
   color: #828282;
   margin-top: 4px;
+  min-height: 26px;
 }
 .comparision-table li + li {
   margin-top: 25px;
@@ -11651,7 +11652,7 @@ footer .footer-bottom .footer-links .link-white:hover, footer .footer-bottom .fo
 }
 .product-details-banner .product-details h5.price-tags p, .product-details-banner .product-details .price-tags.h5 p {
   color: #000000;
-  margin: 35px 20px 35px 0;
+  margin: 25px 20px 20px 0;
 }
 .product-details-banner .product-details h5.price-tags span, .product-details-banner .product-details .price-tags.h5 span {
   color: #7d7d7d;
@@ -12231,6 +12232,10 @@ body {
   margin-left: auto !important;
 }
 
+.radius-0 {
+  border-radius: 0 !important;
+}
+
 .btn-icon {
   display: inline-flex;
   align-items: center;
@@ -12310,6 +12315,26 @@ body {
 }
 .btn-success:hover, .btn-success:focus, .btn-success:active {
   background: #2b601b !important;
+}
+
+.btn-prefix-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-prefix-icon > img {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px 0 -4px;
+}
+
+.btn-primary-light {
+  border: 1px solid #191919 !important;
+  background: #191919 !important;
+  color: #fff !important;
+}
+.btn-primary-light:hover, .btn-primary-light:focus, .btn-primary-light:active {
+  background: #262626 !important;
 }
 
 .btn-outlined-grey {
@@ -12501,6 +12526,9 @@ p.section-subtitle {
 .form-group .joined-input::-webkit-input-placeholder {
   color: #000000;
 }
+.form-group textarea.form-control {
+  min-height: 100px;
+}
 .form-group .select-control {
   color: #000000;
   background: url("./../img/chevron-down-black.svg") no-repeat right 16px center;
@@ -12645,12 +12673,10 @@ p.section-subtitle {
   bottom: 0;
   display: block;
   z-index: -1;
-  background: #d0d0d2 url("./../img/home-banner/banner-slide-4.jpg") no-repeat bottom left;
-  background-size: contain;
-  filter: blur(2px);
+  background: #0e0d0d;
 }
 .contact-us-section .subscription-form {
-  background: rgba(0, 0, 0, 0.76);
+  background: #0e0d0d;
   padding: 50px 40px;
   border-radius: 20px;
   color: #fff;
@@ -12712,6 +12738,34 @@ p.section-subtitle {
   font-weight: 500;
   color: #000000;
   margin-top: 2px;
+}
+
+.contact-us-dialog.modal .modal-dialog .modal-content {
+  border-radius: 0;
+}
+.contact-us-dialog.modal .modal-dialog .modal-content .modal-header {
+  display: flex;
+  flex-direction: column;
+  padding: 26px 30px 20px;
+  border-bottom: 0;
+}
+.contact-us-dialog.modal .modal-dialog .modal-content .modal-header .btn-close {
+  border-radius: 50%;
+  margin-left: auto;
+}
+.contact-us-dialog.modal .modal-dialog .modal-content .modal-header .modal-title {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 600;
+}
+.contact-us-dialog.modal .modal-dialog .modal-content .modal-body {
+  padding: 20px 30px;
+}
+.contact-us-dialog.modal .modal-dialog .modal-content .modal-body .labled-input {
+  margin-bottom: 24px;
+}
+.contact-us-dialog.modal .modal-dialog .modal-content .modal-footer {
+  border-top: 0;
 }
 
 @media (max-width: 1199px) {
